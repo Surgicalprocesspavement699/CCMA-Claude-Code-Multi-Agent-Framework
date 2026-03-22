@@ -1,0 +1,29 @@
+# === CCMA Framework ===
+# State files (auto-generated, don't version)
+.ccma/scratchpad.md
+.ccma/current-plan.md
+
+# Logs (auto-generated)
+.claude/pipeline-log.jsonl
+.claude/activity-log.jsonl
+.claude/disruption-log.jsonl
+.claude/retrospective-log.jsonl
+
+# Agent memory (auto-generated)
+.claude/agent-memory/
+
+# Compact recovery (auto-generated)
+.claude/compact-recovery.md
+.claude/archives/
+
+# === Project (add your own) ===
+__pycache__/
+*.pyc
+node_modules/
+.env
+.env.*
+*.pem
+*.key
+dist/
+build/
+tmp/
