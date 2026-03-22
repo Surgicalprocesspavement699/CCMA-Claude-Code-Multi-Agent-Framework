@@ -1,0 +1,98 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Bash(*)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "./.ccma/scripts/ccma-statusline.sh"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|compact|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.ccma/scripts/ccma-session-start.sh"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "manual|auto",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.ccma/scripts/ccma-pre-compact.sh"
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.ccma/scripts/ccma-session-start.sh"
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.ccma/scripts/ccma-log.sh orchestrator ERROR \"Session stopped: API error or rate limit\""
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.ccma/scripts/ccma-activity-log.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.ccma/scripts/ccma-bash-guard.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.ccma/scripts/ccma-sensitive-file-guard.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.ccma/scripts/ccma-auto-format.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
